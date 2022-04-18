@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="d-flex">
+        <div *ngFor="let advertisement of advertisementList" class="advertisement-card">
+
+            <div class="outer-circle">
+                <div class="inner-circle"></div>
+                <img [src]="advertisement.imgUrl" class="position-absolute">
+            </div>
+            <p class="title">{{advertisement.title}}</p>
+            <p class="content">{{advertisement.content}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+:host {
+    display: block;
+    margin-top: 6rem;
+}
+
+.title {
+    font-size: 30px;
+    color: var(--mg-green);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.picks-for-you-img {
+    width: calc((100% - 5rem)/3);
+}
+
+.center-img {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.picks-wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.picks-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.picks-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

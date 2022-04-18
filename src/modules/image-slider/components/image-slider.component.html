@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="slider-img-wrapper">
+        <img *ngIf="selectedImageIndex == 0" src="assets/slider-img-1.jpg" class="slider-img">
+        <img *ngIf="selectedImageIndex == 1" src="assets/slider-img-2.jpg" class="slider-img">
+        <img *ngIf="selectedImageIndex == 2" src="assets/slider-img-1.jpg" class="slider-img">
+        <img *ngIf="selectedImageIndex == 3" src="assets/slider-img-2.jpg" class="slider-img">
+        <div class="change-slider-dot-wrapper">
+
+            <div class="slider-dot" [ngClass]="{'selected-dot': dot.isSelected}" (click)="onSelectSliderImage(dot)"
+                *ngFor="let dot of dotList"></div>
+        </div>
+    </div>
+</div>

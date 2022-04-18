@@ -1,0 +1,12 @@
+<div class="container">
+
+    <div class="images-wrapper">
+        <p class="title">GREYFOOD Alışveriş Süreci</p>
+        <div *ngFor="let progress of progressList; let i =index">
+            <img class="progress-img" [src]="progress.imgUrl">
+        </div>
+        <img class="progress-arrow" src="assets/progress-arrow.png">
+    </div>
+</div>
+
+<div class="progress-bg"></div>

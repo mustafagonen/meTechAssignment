@@ -1,0 +1,64 @@
+:host {
+    display: block;
+}
+
+.title {
+    font-size: 30px;
+    color: var(--mg-green);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.campaign-img {
+    width: calc((100% - 5rem)/3);
+}
+
+.center-img {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.view-all-btn {
+    background-color: var(--mg-green);
+    width: 150px;
+    color: white;
+    border: none !important;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    height: 50px;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 3rem;
+}
+
+.button-right {
+    background-color: #007f36;
+    height: 50px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 25px 25px 0;
+    padding-top: 12px;
+    padding-left: 14px;
+}
+
+.images-wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.images-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.images-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

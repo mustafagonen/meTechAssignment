@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    margin-top: 6rem;
+}
+
+.title {
+    font-size: 30px;
+    color: var(--mg-green);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.product-wrapper {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.product {
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+    height: 30rem;
+    position: relative;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    padding-top: 56px;
+}
+
+.price {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}

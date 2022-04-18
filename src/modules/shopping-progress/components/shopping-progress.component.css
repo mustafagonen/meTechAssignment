@@ -1,0 +1,44 @@
+:host {
+    display: block;
+    margin-top: 6rem;
+    width: 100%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.progress-bg {
+    width: 100%;
+    background-image: url(../../../assets/progress-bg.png);
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+}
+
+.progress-img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.progress-arrow {
+    top: 80px;
+    position: absolute;
+    left: 215px;
+}

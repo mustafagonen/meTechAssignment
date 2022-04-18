@@ -1,0 +1,68 @@
+:host {
+    display: block;
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.banner-menu {
+    font-weight: 600;
+    color: var(--mg-dark-gray);
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+.menu-wrapper {
+    margin-left: 2rem;
+}
+
+.campaigns-icon {
+    margin-top: -2px;
+}
+
+.blog-icon {
+    margin-top: -4px;
+}
+
+.catalog-icon {
+    margin-top: -6px;
+}
+
+.all-categories-btn {
+    color: var(--mg-green);
+    border: 2px solid var(--mg-green);
+    border-radius: 22px;
+    font-weight: bold;
+    height: 2.5rem;
+    background: transparent;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+input {
+    font-size: 13px;
+    border-radius: 2rem;
+    margin-left: auto;
+    border: 2px solid #00000014;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    width: 32rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+::placeholder {
+    color: #9d9d9c;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 16px;
+    padding-left: 0 !important;
+}
+
+.search-icon {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+}

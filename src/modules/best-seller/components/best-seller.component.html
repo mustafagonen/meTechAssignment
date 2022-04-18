@@ -1,0 +1,24 @@
+<div class="container">
+    <p class="title">Çok Satanlar</p>
+
+    <div class="w-100 d-flex">
+        <div class="product" *ngFor="let product of productListTop; let i = index">
+            <div class="product-card">
+                <img [ngClass]="{'pt-6px': i==0,'pt-12px': i==1}" [src]="product.imgUrl">
+                <div class="price">
+                    <img src="assets/basket-price.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 d-flex">
+        <div class="product" *ngFor="let product of productListBottom; let i = index">
+            <div class="product-card">
+                <img [ngClass]="{'pt-2rem': i==0,'pt-2-5rem': i==1}" [src]="product.imgUrl">
+                <div class="price">
+                    <img src="assets/basket-price.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

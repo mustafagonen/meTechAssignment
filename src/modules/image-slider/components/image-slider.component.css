@@ -1,0 +1,49 @@
+:host {
+    margin-top: 1.75rem;
+    display: block;
+}
+
+.slider-img-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    position: relative;
+}
+
+.slider-img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.change-slider-dot-wrapper {
+    width: 128px;
+    height: 51px;
+    position: absolute;
+    right: 17%;
+    bottom: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.588;
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.34);
+}
+
+.slider-dot {
+    background-color: var(--mg-dark-gray);
+    height: 9px !important;
+    width: 9px !important;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.slider-dot:last-child {
+    margin-right: 0 !important;
+}
+
+.selected-dot {
+    background-color: var(--mg-green) !important;
+}

@@ -1,0 +1,49 @@
+:host {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.market-places-bg {
+    width: 100%;
+    background-image: url(../../../assets/store-bg.png);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.market-places-wrapper {
+    margin-top: 5.5rem;
+    position: absolute;
+    left: 52vw;
+    width: 453px;
+}
+
+.center-img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.description-wrapper {
+    margin-top: 4.5rem;
+    text-align: left;
+
+}
+
+.title {
+    color: var(--mg-green);
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.content {
+    color: var(--mg-dark-gray);
+    font-size: 18px;
+    text-align: left;
+}
+
+.qr-img {
+    margin-top: 1rem;
+}

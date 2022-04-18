@@ -1,0 +1,51 @@
+<div class="container">
+    <p class="title">Kategoriler</p>
+
+    <div class="categories-wrapper d-flex">
+        <div class="menu-wrapper">
+            <div class="menu" (click)="onSelectMenuClick(i)"
+                [ngClass]="{'all-categories': i==6, 'pt-20px': i==3, 'pt-12px': i==4,'pt-22px': i==5}"
+                *ngFor="let menu of menuList; let i =index">
+                <img [src]="menu.imgUrl">
+                <div [hidden]="i==6"
+                    [ngClass]="{'mt-36px': i==2, 'mt-32px': i==3 || i==4, 'selected-menu': i==selectedMenuIndex}"
+                    class="underline-img"></div>
+            </div>
+        </div>
+        <div *ngIf="selectedMenuIndex%2 == 0" class="product-wrapper">
+            <div class="w-100 d-flex">
+                <div class="product" *ngFor="let product of productListTop; let i = index">
+                    <img [ngClass]="{'pt-6px': i==0,'pt-12px': i==1}" [src]="product.imgUrl">
+                    <div class="price">
+                        <img src="assets/basket-price.png">
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-flex pt-2">
+                <div class="product" *ngFor="let product of productListBottom; let i = index">
+                    <img [ngClass]="{'pt-2rem': i==0,'pt-2-5rem': i==1}" [src]="product.imgUrl">
+                    <div class="price">
+                        <img src="assets/basket-price.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedMenuIndex%2 != 0" class="product-wrapper">
+            <div class="w-100 d-flex">
+                <div class="product" *ngFor="let product of productListTop2; let i = index">
+                    <img [ngClass]="{'pt-6px': i==0,'pt-12px': i==1}" [src]="product.imgUrl">
+                    <div class="price">
+                        <img src="assets/basket-price.png">
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-flex pt-2">
+                <div class="product" *ngFor="let product of productListBottom2; let i = index">
+                    <img [ngClass]="{'pt-2rem': i==0,'pt-2-5rem': i==1}" [src]="product.imgUrl">
+                    <div class="price">
+                        <img src="assets/basket-price.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

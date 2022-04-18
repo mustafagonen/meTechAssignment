@@ -1,0 +1,71 @@
+:host {
+    display: block;
+    height: 48px;
+    width: 100%;
+}
+
+.welcome {
+    font-size: 12px;
+    color: #9d9d9c;
+    margin-right: 4px;
+}
+
+.user-firstname {
+    font-size: 16px;
+    color: var(--mg-green);
+    margin-right: .75rem;
+}
+
+
+.basket-btn {
+    color: white;
+    background-color: var(--mg-green);
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    text-align: left;
+    width: 113px;
+    height: 30px;
+    padding-left: 32px;
+    margin-right: 2.5rem;
+}
+
+.button-right {
+    background-color: var(--mg-green);
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.basket-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+select {
+    word-wrap: normal;
+    background: transparent;
+    border: none;
+    color: var(--mg-dark-gray);
+    font-size: 15px;
+}
+
+select:focus-visible {
+    outline: none !important;
+    border: none !important;
+}

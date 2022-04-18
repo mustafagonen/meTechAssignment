@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="slider-wrapper">
+        <div class="arrow-icon-left" (click)="previous()">
+            <img *ngIf="scrollYPosition < 200" src="assets/left-arrow.png">
+            <img *ngIf="scrollYPosition >= 200" src="assets/left-arrow-green.png">
+        </div>
+
+        <div id="logoWrapper" class="logo-wrapper">
+
+            <div *ngFor="let logo of logoList; let i =index">
+                <img [ngClass]="{'selected-logo': logo.isSelected,'pt-8px': i==1}" (click)="onSelectSliderLogo(logo)"
+                    [src]="logo.imgUrl" class="logo">
+            </div>
+        </div>
+        <div class="arrow-icon-right" (click)="next()">
+            <img *ngIf="scrollYPosition > 1347" src="assets/right-arrow.png">
+            <img *ngIf="scrollYPosition < 1347" src="assets/right-arrow-green.png">
+
+        </div>
+    </div>
+</div>
